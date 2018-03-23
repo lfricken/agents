@@ -20,10 +20,10 @@ python -m pysc2.agents.run --map DefeatRoaches --agent pysc2.agents.predictors.L
 
 python -m pysc2.agents.run --map DefeatRoaches --agent pysc2.agents.scripted_agent.DefeatRoaches
 
-
+python -m pysc2.bin.play --map DefeatRoaches_simple
 
 Add Maps To:
-C:\Users\leon\AppData\Local\Programs\Python\Python36\Lib\site-packages\pysc2\maps
+C:\Users\USERNAME\AppData\Local\Programs\Python\Python36\Lib\site-packages\pysc2\maps\mini_games
 
 
 
