@@ -1,9 +1,8 @@
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-
 import numpy
-
 from pysc2.agents import base_agent
 from pysc2.lib import actions
 from pysc2.lib import features
@@ -22,5 +21,11 @@ _SELECT_ALL = [0]
 
 class LearnPrediction(base_agent.BaseAgent):
 
+
+    def encode(self):
+        return self
+
     def step(self, obs):
-        return actions.FunctionCall(_SELECT_ARMY, [_SELECT_ALL])
+        t = actions.FUNCTIONS.Build_Bunker_screen.id
+        return actions.FunctionCall(t, [])
+

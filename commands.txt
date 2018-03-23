@@ -1,0 +1,23 @@
+
+
+Agent:
+python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.scripted_agent.CollectMineralShards
+python -m pysc2.bin.agent --map DefeatRoaches --agent pysc2.agents.scripted_agent.DefeatRoaches
+
+Random Agent:
+python -m pysc2.bin.agent --map Simple64
+
+Play As Human:
+python -m pysc2.bin.play --map Simple64
+
+
+
+
+python -m pysc2.bin.agent --map DefeatRoaches --agent pysc2.agents.predictors.LearnPrediction
+
+
+
+
+
+
+
