@@ -26,6 +26,7 @@ class LearnPrediction(base_agent.BaseAgent):
         return self
 
     def step(self, obs):
-        t = actions.FUNCTIONS.Build_Bunker_screen.id
-        return actions.FunctionCall(t, [])
+        if(obs.last()):
+            print(obs.reward)
+        return actions.FunctionCall(0, [])
 
