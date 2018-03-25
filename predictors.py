@@ -19,14 +19,19 @@ _NOT_QUEUED = [0]
 _SELECT_ALL = [0]
 
 
-class LearnPrediction(base_agent.BaseAgent):
+class SaveSimulationResults(base_agent.BaseAgent):
 
 
     def encode(self):
         return self
 
     def step(self, obs):
+
+        #if(obs.reward > 0):
+            #print("\n\n\nNEW GAME NEW GAME NEW GAME NEW GAME NEW GAME NEW GAME NEW GAME NEW GAME NEW GAME NEW GAME ")
+            #print("Marines Start: " + obs.observation)
+
         if(obs.last()):
-            print(obs.reward)
+            print("Agent Last")
         return actions.FunctionCall(0, [])
 

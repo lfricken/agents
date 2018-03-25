@@ -1,4 +1,5 @@
 
+Wrote replay to:
 
 Agent:
 python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.scripted_agent.CollectMineralShards
@@ -7,23 +8,14 @@ python -m pysc2.bin.agent --map DefeatRoaches --agent pysc2.agents.scripted_agen
 Random Agent:
 python -m pysc2.bin.agent --map Simple64
 
-Play As Human:
-python -m pysc2.bin.play --map Simple64
 
-
-
-
-python -m pysc2.bin.agent --map DefeatRoaches --agent pysc2.agents.predictors.LearnPrediction
-
-python -m pysc2.agents.run --map DefeatRoaches --agent pysc2.agents.predictors.LearnPrediction
-
-
+python -m pysc2.bin.play --map ArmyBattle
 python -m pysc2.agents.run --map DefeatRoaches --agent pysc2.agents.scripted_agent.DefeatRoaches
 
-python -m pysc2.bin.play --map DefeatRoaches_simple
+
+python -m pysc2.agents.run --map ArmyBattle --agent pysc2.agents.predictors.SaveSimulationResults
+
 
 Add Maps To:
 C:\Users\USERNAME\AppData\Local\Programs\Python\Python36\Lib\site-packages\pysc2\maps\mini_games
-
-
 
