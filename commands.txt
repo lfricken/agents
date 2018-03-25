@@ -13,7 +13,7 @@ python -m pysc2.bin.play --map ArmyBattle
 python -m pysc2.agents.run --map DefeatRoaches --agent pysc2.agents.scripted_agent.DefeatRoaches
 
 
-python -m pysc2.agents.run --map ArmyBattle --agent pysc2.agents.predictors.SaveSimulationResults
+python -m pysc2.agents.run --map ArmyBattle2 --agent pysc2.agents.predictors.SaveSimulationResults
 
 
 Add Maps To:
